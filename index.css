@@ -1,0 +1,334 @@
+body{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f6f6f6;
+    background-image: linear-gradient(#4c3625,#b09172);
+    height: 100vh;
+}
+header{
+    background:#e7bb8c;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color:#4c3625;
+}
+.HAM div{
+height: 10px;
+width: 50px;
+background-color: #818589;
+border-radius: 25px;
+margin-bottom: 5px;
+}
+.HAM{
+    transition: .5s;
+    height: 40px;
+    padding: 10px;
+    width: 50px;
+    border-radius: 50%;
+    display: none;
+}
+
+.HAM:hover{
+    background-color: 	#D3D3D3;
+}
+header a{
+    font-family: 'Roboto', sans-serif;
+}
+.nav{
+    width: 100vw;
+    height: 50px;
+    background-color: #b09172;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav a{
+padding-inline: 20px;
+text-decoration: none;
+font-size: 35px;
+color:white;
+font-family: 'Roboto', sans-serif;
+}
+.MAINS{
+display: flex;
+justify-content: center;
+align-items: center;
+height:  calc(70vh - 50px);
+}
+
+main p{
+    color: #deae7d;
+    font-size: 50px;
+    margin: 0px;
+}
+main h1{
+    background-color: #deae7d;
+    color:white;
+    height: 40px;
+    width: calc(100%-50px);
+    border-radius: 50px;
+    text-align: center;
+}
+.BILLING{
+    background-color: #f1eae2;
+    width: 40vw;
+    height: 45vh;
+    text-align: center;
+    padding-left: 15px;
+}
+
+.OTHERCONTENT{
+    background-color: #f1eae2;
+    width: 40vh;
+    margin-top: 65px;
+    height: 50vh;
+    margin-left:20px;
+}
+.OTHERCONTENT img{
+    width: 100%;
+    height: 100%;
+}
+footer{
+    width: 100vw;
+    height: 20vh;
+    background-color: #b09172;
+    background-color: black;
+}
+.BILLING select{
+    font-size: 80%;
+}
+.BILLING form{
+    width: 400px;
+    text-align: right;
+}
+.BILLING input{
+width: 150px;
+height: 40px;
+font-size: 15px;
+}
+.BILLING form img{
+    height: 50px;
+    width: 80px;
+}
+.BILLING button{
+    width: 20%;
+    height: 50px;
+    background-color: #4F7942;
+    color: white;
+    font-size: 200%;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    transition: 1s;
+}
+.BILLING button:hover{
+    background-color: 	#228B22;
+
+}
+.IM{
+    display: inline-flex;
+}
+.IM input{
+    height: 30px;
+    width: 30px;
+}
+.BILLING label{
+    font-size: 25px;
+}
+.nav2{
+    position: absolute;
+    width: 250px;
+    height: calc(100vh);
+    background-color: #b09172;
+    flex-direction: column;
+    align-items: center;
+    border: black 5px solid;
+}
+.nav2 a{
+    text-decoration: none;
+    color:white;
+    font-size: 40px;
+    border-bottom: black 5px solid;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+.DONTSEEME{
+    display: none;
+
+}
+.SEEME{
+    display: flex;
+    animation: MOVEIN 1s linear;
+}
+@keyframes MOVEIN {
+    1%{
+        left:-50%
+    }
+    100%{
+        left:0px;
+    }
+}
+
+@media only screen and (min-width: 912px){
+    .nav2{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1900px){
+    main p{
+        color: #deae7d;
+        font-size: 40px;
+        margin: 0px;
+    }
+    .BILLING{
+        height: 50vh;
+    }
+    
+    .BILLING input{
+        height: 10px;
+    }
+    .BILLING label{
+        font-size: 15px;
+    }
+    main h1{
+        height: 30px;
+        font-size: 150%;
+    }
+    .BILLING form img{
+        height: 30px;
+        width: 50px;
+    }
+    .BILLING button{
+        margin-top:10px;
+        height: 40px;
+        font-size: 100%;
+    }
+    .BILLING form{
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 912px) {
+    .BILLING form{
+        width: 250px;
+    }
+    .BILLING label{
+        font-size: 10px;
+    }
+    .MAINS{
+        height: 70vh;
+    }
+    .BILLING button{
+        margin-top:10px;
+        height: 40px;
+        font-size: 80%;
+    }
+    .BILLING{
+        padding: 0px;
+    }
+    header{
+        justify-content: space-around;
+    }
+    .nav{
+        display: none;
+    }
+    .nav2{
+        width: 50%;
+    }
+    .HAM{
+        display: block;
+    }
+    .IM input{
+        margin:0px;
+    }
+    .BILLING form img{
+        height: 20px;
+        width: 40px;
+    }
+    .OTHERCONTENT{
+        width: 40vw;
+    }
+    .BILLING h1{
+        font-size: 20px;
+        height: 25px;
+    }
+}
+@media only screen and (max-width: 912px) {
+    .MAINS{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        margin: 0px;
+    }
+    .MAINS main{
+        width: 60%;
+    }
+    footer{
+        width: 100%;
+    }
+    header{
+    width: 100%;
+    }
+    header h1{
+        font-size: 30px;
+    }
+    .MAINS main{
+        margin:0px;
+        padding: 0px;
+        text-align: center;
+    }
+    .HAM {
+        padding: 0px;
+    }
+    .BILLING{
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    .BILLING form{
+        width: 70%;
+    }
+    
+}
+@media only screen and (max-width: 620px) {
+    body{
+        height: 100vh;
+    }
+main p{
+    color: #deae7d;
+    font-size: 20px;
+}
+    .BILLING{
+        height: 50vh;
+        width: 100%;
+    }
+    .BILLING h1{
+        font-size: 15px;
+        height: 20px;
+    }
+    .BILLING label{
+        font-size: 10px;
+    }
+    .BILLING form{
+        width: 90%;
+    }
+    .OTHERCONTENT{
+        height: 35vh;
+    }
+    .IM{
+        width: auto;
+    }
+    .BILLING button{
+        height: 20px;
+        font-size: 10px;
+    }
+    .BILLING form input, .BILLING select{
+        height: 15px;
+        font-size: 10px;
+    }
+    .BILLING form img{
+        width: auto;
+    }
+}

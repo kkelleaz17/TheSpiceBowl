@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Spice Bowl</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+        <nav class="nav2 DONTSEEME" id="NAV2">
+            <a href="">Spices</a>
+            <a href="">Recipes</a>
+            <a href="">My Cart</a>
+            <a href="">My Account</a>
+            <a href="">Contact Us</a>
+    </nav>
+    <header>
+        <h1>The Spice Bowl</h1>
+        <div class="HAM" id="HAM">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <nav class="nav">
+        <a href="">Spices</a>
+        <a href="">Recipes</a>
+        <a href="">My Cart</a>
+        <a href="">My Account</a>
+        <a href="">Contact Us</a>
+    </nav>
+<div class="MAINS">
+    <main>
+        <p>Payment Form</p>
+     <div class="BILLING">
+        <h1>Billing Information(required)</h1>
+        <form>
+
+       
+        <label for="FN">First Name</label>
+        <input type="text" id="FN" name="First Name" required> 
+        <br>
+        <label for="LN">Last Name</label>
+        <input id = "LN" name = "Last Name" type="text" required>
+        <br>
+        <label for="SA">Street Address</label>
+        <input id="SA" name="Street Address" type="text" required>
+        <br>
+        <label for="SA2">Street Address(2)</label>
+        <input id = "SA2" name="Street Address(2)" type="text">
+        <br>
+        <label for="city">City</label>
+        <input id="city" name = "City" type="text"required>
+        <br>
+        <label for="state">State</label>
+<select id="state" name="State">
+ <option value="AL">AL</option>
+ <option value="AK">AK</option>
+ <option value="AZ">AZ</option>
+ <option value="AR">AR</option>
+ <option value="CA">CA</option>
+ <option value="CZ">CZ</option>
+ <option value="CO">CO</option>
+ <option value="CT">CT</option>
+ <option value="DE">DE</option>
+ <option value="DC">DC</option>
+ <option value="FL">FL</option>
+ <option value="GA">GA</option>
+ <option value="GU">GU</option>
+ <option value="HI">HI</option>
+ <option value="ID">ID</option>
+ <option value="IL">IL</option>
+ <option value="IN">IN</option>
+ <option value="IA">IA</option>
+ <option value="KS">KS</option>
+ <option value="KY">KY</option>
+ <option value="LA">LA</option>
+ <option value="ME">ME</option>
+ <option value="MD">MD</option>
+ <option value="MA">MA</option>
+ <option value="MI">MI</option>
+ <option value="MN">MN</option>
+ <option value="MS">MS</option>
+ <option value="MO">MO</option>
+ <option value="MT">MT</option>
+ <option value="NE">NE</option>
+ <option value="NV">NV</option>
+ <option value="NH">NH</option>
+ <option value="NJ">NJ</option>
+ <option value="NM">NM</option>
+ <option value="NY">NY</option>
+ <option value="NC">NC</option>
+ <option value="ND">ND</option>
+ <option value="OH">OH</option>
+ <option value="OK">OK</option>
+ <option value="OR">OR</option>
+ <option value="PA">PA</option>
+ <option value="PR">PR</option>
+ <option value="RI">RI</option>
+ <option value="SC">SC</option>
+ <option value="SD">SD</option>
+ <option value="TN">TN</option>
+ <option value="TX">TX</option>
+ <option value="UT">UT</option>
+ <option value="VT">VT</option>
+ <option value="VI">VI</option>
+ <option value="VA">VA</option>
+ <option value="WA">WA</option>
+ <option value="WV">WV</option>
+ <option value="WI">WI</option>
+ <option value="WY">WY</option>
+</select>
+        <br>
+        <label for="zip">Zip</label>
+        <input id="zip" name="Zip" type="text"required>
+        <br>
+        <label for="country">Country</label>
+        <input id="country" name = "Country" type="text"required>
+        <br>
+        <label for="phone">Phone Number</label>
+        <input id="phone" name="Phone Number" type="tel"required>
+        <br>
+    </form>
+    <h1>Credit Card(required)</h1>
+    <form>
+        <div class="IM">
+            <img src="AmericanExpress.png">
+            <input type="radio">
+            <img src="Discover.jpg">
+            <input type="radio">
+            <img src="MasterCard.png">
+            <input type="radio">
+            <img src="VISA.jpg">
+            <input type="radio">
+        </div>
+        <br>
+      <label for="CD">Credit Card Number</label>
+      <input type="text" id="CD" name="Credit Card" required>
+      <br>
+      <label for="ED">Expiration Date</label>
+      <input type="date" id="ED" name="Expiration Date" required>
+      <br>
+      <label for="CV">Expiration Date</label>
+      <input type="text" id="CV" name="CsC" required>
+      <br>
+    </form>
+    <button type="submit">Submit</button>
+     </div>
+    </main>
+    <main class="OTHERCONTENT">
+      <img src="NOODLES.jpg" alt="">
+    </main>
+</div>
+<footer>
+    
+</footer>
+</body>
+<script>
+var SEEME = false;
+document.getElementById("HAM").addEventListener("click", function() {
+ if(SEEME == true){
+    NAV2.classList.add("DONTSEEME");
+    NAV2.classList.remove("SEEME")
+    SEEME = false;
+ }else if(SEEME == false){
+    NAV2.classList.remove("DONTSEEME");
+    NAV2.classList.add("SEEME")
+    SEEME = true;
+ }
+});
+
+</script>
+</html>
